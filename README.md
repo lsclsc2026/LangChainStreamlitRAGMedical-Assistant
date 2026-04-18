@@ -197,5 +197,5 @@ streamlit run app.py
 - 作者：李硕晨
 - 邮箱：19051093016@163.com
 - 电话：19051093016
-
+- 产品经理相关demo可点击连接跳转飞书查看：https://kcn8vcjp2xvu.feishu.cn/wiki/HWBnw1YvDi6Lc7k2uwxcRK3Snqb
 ---
