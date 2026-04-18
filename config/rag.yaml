@@ -1,0 +1,17 @@
+chat_model_name: qwen3-max
+embedding_model_name: text-embedding-3-small
+temperature: 0.2
+enable_langsmith: false
+langsmith_project: langchain-agent-master
+langsmith_endpoint: https://api.smith.langchain.com
+# 本地重排序模型路径（可写 snapshots 根目录，也可写具体快照目录）
+# 示例：F:/Hugging_Face/models/models--Qwen--Qwen3-Reranker-0.6B/snapshots
+local_reranker_model_path: F:/Hugging_Face/models/models--Qwen--Qwen3-Reranker-0.6B/snapshots
+# 兜底模型ID，用于自动下载
+local_reranker_model_id: Qwen/Qwen3-Reranker-0.6B
+# 自动下载缓存目录（留空表示 huggingface 默认缓存）
+local_reranker_cache_dir: ""
+# 当本地路径不存在时是否自动下载
+local_reranker_auto_download: false
+local_reranker_device: cpu
+local_reranker_local_files_only: true

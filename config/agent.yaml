@@ -1,0 +1,11 @@
+external_data_path: data/external/records.csv
+
+# 前端trace刷新节流（秒）。0表示每次事件都刷新且不额外等待。
+trace_refresh_interval_sec: 0.0
+
+# 医疗分诊性能选项：优先减少串行模型调用与重检索开销。
+triage_perf:
+  enable_lightweight_sufficiency: true
+  enable_lightweight_severity: true
+  enable_single_pass_generation: true
+  route_top_k: 1

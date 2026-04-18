@@ -1,0 +1,42 @@
+# 心理咨询模块配置
+# 推荐优先使用讯飞 PDF OCR 任务接口（iocr.xfyun.cn/ocrzdq）。
+
+# 是否优先使用云端 OCR（推荐 true）
+use_cloud_ocr: true
+
+# OCR 服务类型：xfyun_pdf_ocr / spark_http / local_only
+ocr_provider: xfyun_pdf_ocr
+
+# 讯飞 PDF OCR 任务接口配置（根据最新文档填写）
+xfyun_base_url: "https://iocr.xfyun.cn/ocrzdq"
+xfyun_app_id: "f4992fb7"
+xfyun_api_secret: "ZWQ2ZDEyNDAxMTg0ZjMzNjY4NDYyNzY2"
+xfyun_export_format: "markdown"
+xfyun_poll_interval_seconds: 5
+xfyun_timeout_seconds: 1800
+
+# 星火 HTTP 接口参数（仅当 ocr_provider=spark_http 时使用）
+# X2: https://spark-api-open.xf-yun.com/x2/chat/completions
+# X1.5: https://spark-api-open.xf-yun.com/v2/chat/completions
+spark_ocr_url: "https://spark-api-open.xf-yun.com/x2/chat/completions"
+
+# API Key（文档中的 APIpassword，使用 Bearer 鉴权）
+spark_api_key: ""
+
+# 模型名（文档示例：spark-x）
+spark_model: "spark-x"
+
+# thinking 模式：enabled / disabled / auto
+spark_thinking_type: "disabled"
+
+# OCR 生成参数
+spark_temperature: 0.1
+spark_top_p: 0.9
+spark_max_tokens: 4096
+spark_timeout_seconds: 120
+
+# 每次传给云端 OCR 的页面数量（过大可能慢）
+spark_batch_pages: 1
+
+# 云端失败时是否自动回退本地 OCR
+fallback_to_local_ocr: true
