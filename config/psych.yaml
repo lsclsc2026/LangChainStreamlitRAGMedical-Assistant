@@ -9,8 +9,8 @@ ocr_provider: xfyun_pdf_ocr
 
 # 讯飞 PDF OCR 任务接口配置（根据最新文档填写）
 xfyun_base_url: "https://iocr.xfyun.cn/ocrzdq"
-xfyun_app_id: "f4992fb7"
-xfyun_api_secret: "ZWQ2ZDEyNDAxMTg0ZjMzNjY4NDYyNzY2"
+xfyun_app_id: ""
+xfyun_api_secret: ""
 xfyun_export_format: "markdown"
 xfyun_poll_interval_seconds: 5
 xfyun_timeout_seconds: 1800
